@@ -1,5 +1,5 @@
-Muttr: A Secure Distributed Messaging Protocol
-==============================================
+Muttr: Secure Distributed Messaging
+===================================
 
 Abstract
 --------
