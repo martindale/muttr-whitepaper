@@ -62,7 +62,10 @@ Protocol
 The Muttr protocol defines the message structure for seed-to-seed as well as 
 seed-to-pod communication. Muttr uses the Kademlia algorithm for routing 
 messages through the DHT, which will not be discussed here; only the message 
-structure and required contents will defined here.
+structure and required contents will be defined here. For a more in-depth look 
+at the Kademlia implementation, see the specification used for 
+[Kad](https://github.com/gordonwritescode/kad), which is used by libmuttr 
+[here](http://xlattice.sourceforge.net/components/protocol/kademlia/specs.html).
 
 A complete implementation of the protocol in JavaScript can be found at 
 [libmuttr](https://github.com/muttr/libmuttr). The following protocol 
@@ -146,7 +149,7 @@ The different message types are described below.
 #### Key/Value Pairs
 
 Values are stored and communicated in a specific format. A valid message is one 
-that is **both** signed and encrypted using the PGP format. The protocal cannot 
+that is **both** signed and encrypted using the PGP format. The protocol cannot 
 prevent the storage and retrieval of unsigned messages. However, a proper 
 implementation will either ignore messages with invalid signatures after local
 decryption or *at minimum* warn the user or application.
