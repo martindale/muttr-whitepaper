@@ -168,8 +168,8 @@ prevent the storage and retrieval of unsigned messages. However, a proper
 implementation will either ignore messages with invalid signatures after local
 decryption or *at minimum* warn the user or application.
 
-Values must be transmitted as the hexidecimal representation of an ASCII
-armored PGP message. The corresponding key must be the hexidecimal SHA-1 hash
+Values must be transmitted as the hexadecimal representation of an ASCII
+armored PGP message. The corresponding key must be the hexadecimal SHA-1 hash
 of the transmitted value.
 
 ### Seed-to-Pod Communication
@@ -276,7 +276,7 @@ Response:
 ##### POST /messages - (Store Message in DHT)
 
 Asks the pod to store a message in the DHT on your behalf. Request body must be
-a hexidecimal encoded armored PGP encrypted message.
+a hexadecimal encoded armored PGP encrypted message.
 
 Response:
 
@@ -288,7 +288,7 @@ Response:
 
 ##### GET /messages/:hash - (Fetch Message from DHT)
 
-Returns the hexidecimal encoded armored PGP encrypted message.
+Returns the hexadecimal encoded armored PGP encrypted message.
 
 ##### GET /aliases/:alias - (Fetch Public Key for Alias)
 
@@ -313,7 +313,7 @@ Response:
 
 ##### POST /tokens - (Create Auth Token for Request)
 
-Creates an authorization token for GET and DELETE requests. Requires paramters:
+Creates an authorization token for GET and DELETE requests. Requires parameters:
 `resource` (endpoint path) and `method` (HTTP verb).
 
 Response:
@@ -421,7 +421,7 @@ registered identities and verify the signature. If the signature is verified,
 then the client will begin receiving messages. If authentication fails, the pod
 must close the WebSockets connection and the client must connect again.
 
-The authentication message expected by the pod should be the hexidecimal
+The authentication message expected by the pod should be the hexadecimal
 representation of an ASCII armored PGP signed message (cleartext). The message
 contents must be in the form of a querystring and contain the following
 parameters:
