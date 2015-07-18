@@ -24,8 +24,8 @@ Mechanics
 ---------
 
 The Muttr network is comprised of two distinct types of participants: *seeds*
-and *pods*. Seeds are nodes which store PGP encrypted messages on behalf other
-seeds in the network, forming a DHT (distributed hash table). Each seed
+and *pods*. Seeds are nodes which store PGP encrypted messages on behalf of
+other seeds in the network, forming a DHT (distributed hash table). Each seed
 possesses a PGP key pair which is used to sign messages to other seeds and
 decrypt messages in the DHT that are intended for them.
 
@@ -37,7 +37,7 @@ to help deliver messages to other seeds by providing the location (or key) of a
 given message in the DHT, which the pod will relay to the recipient directly or
 if the recipient is offline, store for "playback" at a later time.
 
-In practice, to join the network a seed will connect to a pod of it's choice on
+In practice, to join the network a seed will connect to a pod of its choice on
 two channels. The first channel is to start discovering other seeds in the DHT
 and begin participating in the cooperative storage of messages. The other is a
 private channel between the seed and the pod exclusively, for the purpose of
