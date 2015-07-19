@@ -20,6 +20,25 @@ end-to-end security with regards to message encryption, and in eliminating the
 need for any centralized authority to facilitate a robust and reliable network
 of messaging actors.
 
+Introduction
+------------
+
+Secure messaging is an essential component of a free society – without the
+ability to move information in confidence, free speech comes under a natural
+pressure resulting from the fear of bad actors being able to intercept and act,
+sometimes violently, against the flow of this information.  Whether the
+information is being transmitted by humans intending to share their thoughts or
+machines attempting to form consensus in a network, the integrity and
+reliability of the delivery of the component messages requires the transport
+network to be secure and free from censorship.
+
+We can imagine a wildly dystopian future wherein incumbent authorities have an
+incentive to have a monopoly on information, and the ability to move information
+in an uninhibited fashion threatens their ability to defend that monopoly.  In
+such a future, one would expect the emergence of markets for data and
+information, especially in regards to the data that is considered "dangerous" to
+the established authority.
+
 Mechanics
 ---------
 
