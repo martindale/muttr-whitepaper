@@ -39,6 +39,20 @@ such a future, one would expect the emergence of markets for data and
 information, especially in regards to the data that is considered "dangerous" to
 the established authority.
 
+For a system to be secured against these types of actors, we must ensure a
+number of principles.  First and foremost, that while in transit, messages
+cannot be read by the parties responsible for their transit.  This means that
+network operators should not have any introspection into the content, but also
+no awareness of the originator or destination of the data.
+
+This can be partially resolved through a sparse routing network, which Muttr
+implements, but can more completeley resolved by using assymetric cryptography.
+Muttr has select the PGP scheme to prevent this type of introspection, which
+requires the possession of a private key to decrypt any messages that have been
+intercepted.  Furthermore, the specific content to be accessed is address by its
+hash, which can be communicated securely or out-of-band, further removing the
+ability of intermediaries to target specific entities.
+
 Mechanics
 ---------
 
