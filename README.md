@@ -46,12 +46,12 @@ network operators should not have any introspection into the content, but also
 no awareness of the originator or destination of the data.
 
 This can be partially resolved through a sparse routing network, which Muttr
-implements, but can more completeley resolved by using assymetric cryptography.
-Muttr has select the PGP scheme to prevent this type of introspection, which
+implements, but can more completely resolved by using asymmetric cryptography.
+Muttr has selected the PGP scheme to prevent this type of introspection, which
 requires the possession of a private key to decrypt any messages that have been
-intercepted.  Furthermore, the specific content to be accessed is address by its
-hash, which can be communicated securely or out-of-band, further removing the
-ability of intermediaries to target specific entities.
+intercepted.  Furthermore, the specific content to be accessed is addressed by
+its hash, which can be communicated securely or out-of-band, further removing
+the ability of intermediaries to target specific entities.
 
 Mechanics
 ---------
